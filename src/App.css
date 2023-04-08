@@ -1,0 +1,134 @@
+.types {
+  @apply flex ml-2;
+}
+
+.type{
+  @apply  text-white  h-8 w-20 text-center rounded-lg bg-black;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.type.poison{
+  @apply bg-[linear-gradient(#a040a0,#803380)]
+}
+
+.type.grass{
+  @apply bg-[linear-gradient(#78c850,#5ca935)]
+}
+
+.type.bug{
+  @apply bg-[linear-gradient(#a8b820,#8d9a1b)]
+}
+
+.type.fire{
+  @apply bg-[linear-gradient(#f08030,#dd6610)]
+}
+
+.type.water{
+  @apply bg-[linear-gradient(#6890f0,#386ceb)]
+}
+
+.type.flying{
+  @apply bg-[linear-gradient(#a890f0,#9180c4)]
+}
+
+.type.normal{
+  @apply bg-[linear-gradient(#a8a878,#8a8a59)]
+}
+
+.types > :not(:only-child):not(:last-child) {
+  @apply rounded-r-none;
+}
+
+.types > :not(:only-child):is(:last-child) {
+  @apply rounded-l-none;
+}
+
+.stat{
+  @apply flex w-56;
+}
+
+.modal-box{
+  @apply max-w-5xl;
+}
+
+.progress {
+  @apply relative w-full appearance-none overflow-hidden h-6 rounded-md bg-transparent;
+}
+
+.progress::-moz-progress-bar {
+  @apply rounded-md;
+}
+.progress:indeterminate::after {
+  @apply absolute top-0 bottom-0 -left-[40%] w-1/3;
+}
+.progress::-webkit-progress-bar {
+  @apply rounded-md;
+}
+.progress::-webkit-progress-value {
+  @apply rounded-md;
+}
+
+.progress-v-low::-moz-progress-bar {
+  @apply bg-red-500;
+}
+.progress-v-low:indeterminate::after {
+  @apply bg-red-500;
+}
+.progress-v-low::-webkit-progress-bar {
+  @apply bg-red-500;
+}
+.progress-v-low::-webkit-progress-value {
+  @apply bg-red-500;
+}
+
+.progress-low::-moz-progress-bar {
+  @apply bg-orange-500;
+}
+.progress-low:indeterminate::after {
+  @apply bg-orange-500;
+}
+.progress-low::-webkit-progress-bar {
+  @apply bg-orange-500;
+}
+.progress-low::-webkit-progress-value {
+  @apply bg-orange-500;
+}
+
+.progress-medium::-moz-progress-bar {
+  @apply bg-yellow-500;
+}
+.progress-medium:indeterminate::after {
+  @apply bg-yellow-500;
+}
+.progress-medium::-webkit-progress-bar {
+  @apply bg-yellow-500;
+}
+.progress-medium::-webkit-progress-value {
+  @apply bg-yellow-500;
+}
+
+.progress-high::-moz-progress-bar {
+  @apply bg-lime-500;
+}
+.progress-high:indeterminate::after {
+  @apply bg-lime-500;
+}
+.progress-high::-webkit-progress-bar {
+  @apply bg-lime-500;
+}
+.progress-high::-webkit-progress-value {
+  @apply bg-lime-500;
+}
+
+.progress-v-high::-moz-progress-bar {
+  @apply bg-green-500;
+}
+.progress-v-high:indeterminate::after {
+  @apply bg-green-500;
+}
+.progress-v-high::-webkit-progress-bar {
+  @apply bg-green-500;
+}
+.progress-v-high::-webkit-progress-value {
+  @apply bg-green-500;
+}
